@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
 :root {
     /*======= COLORS ====*/
     --blue: #2c67e3;
@@ -80,11 +81,12 @@ a {
 
 .card p:first-child::before {
     position: absolute;
-    content: '\201C';
+    content: '“';
     color: var(--blue);
-    left: -15px;
-    top: -10px;
+    left: -75px;
+    top: -15px;
     font-size: 100px;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .url {
