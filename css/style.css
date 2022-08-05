@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+:root {
+    /*======= COLORS ====*/
+    --blue: #2c67e3;
+    --light-white: #ffffff7d;
+    --white: #fff;
+    --black: #000;
+    --orange: #ff9433;
+    /*===== FONT SIZE ====*/
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-15: 15px;
+    --fs-20: 20px;
+    /*===== FONT SIZE WEIGHT====*/
+    --fw-normal: 'normal';
+    --fw-bold: 'bold';
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*========NFT =====*/
+
+.nft-body {
+    background-color: var(--blue);
+    width: 330px;
+    height: 100%;
+    padding: 15px 15px 0px 15px;
+    position: relative;
+    z-index: 9;
+}
+
+.nft-body::before {
+    position: absolute;
+    content: '';
+    right: -40px;
+    top: 0;
+    background-color: var(--light-white);
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    z-index: -9;
+}
+
+.nft-body::after {
+    position: absolute;
+    content: '';
+    left: -55px;
+    bottom: 34px;
+    background-color: var(--light-white);
+    width: 75px;
+    height: 75px;
+    opacity: 0.5;
+    z-index: -99;
+    border-radius: 100%;
+}
+
+.card {
+    background-color: #fff;
+    padding: 90px 35px 50px 35px;
+}
+
+.card p:first-child {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    position: relative;
+}
+
+.card p:first-child::before {
+    position: absolute;
+    content: '\201C';
+    color: var(--blue);
+    left: -15px;
+    top: -10px;
+    font-size: 100px;
+}
+
+.url {
+    margin-top: 50px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.url::before {
+    position: absolute;
+    content: '';
+    border-top: 2px solid var(--blue);
+    left: 0;
+    top: 0;
+    width: 50px;
+}
+
+.url a {
+    color: var(--black);
+    font-weight: 500;
+}
+
+.nft-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 0;
+    color: var(--white);
+    font-size: var(--fs-15);
+    letter-spacing: 2px;
+    font-weight: 300;
+    position: relative;
+    z-index: 99;
+}
+
+.nft-footer:after {
+    position: absolute;
+    content: '';
+    right: -20px;
+    bottom: -35px;
+    width: 15px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid var(--light-white);
+    z-index: -9;
+    border-radius: 20px 50px;
+    opacity: 0.5;
+}
+
+.info span {
+    background-color: var(--orange);
+    padding: 1px 2px 0 2px;
+    font-weight: 500;
+    letter-spacing: normal;
+    font-size: var(--fs-14);
+}
+
+.info p:first-child {
+    padding-bottom: 5px;
+}
